@@ -27,7 +27,7 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 ```mermaid
 classDiagram
     class ReprodutorMusical {
-        +tocar(): void
+        +tocar() 
         +pausar()
         +selecionarMusica(String musica)
     }
