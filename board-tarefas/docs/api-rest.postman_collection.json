@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "9da8669f-5c50-4271-bb5f-5b744ed8bad7",
+		"name": "api-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32714406",
+		"_collection_link": "https://estruturanteteam.postman.co/workspace/Estruturante~b31366a6-1cdd-4d2d-aad6-061b6c29783a/collection/32714406-9da8669f-5c50-4271-bb5f-5b744ed8bad7?action=share&source=collection_link&creator=32714406"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Joao\",\r\n  \"account\": {\r\n    \"number\": \"000000088-0\",\r\n    \"agency\": \"0090\",\r\n    \"balance\": 1500.00,\r\n    \"limit\": 100.00\r\n  },\r\n  \"card\": {\r\n    \"number\": \"xxxx xxxx xxxx 000\",\r\n    \"limit\": 1000.00\r\n  },\r\n  \"features\": [\r\n    {\r\n      \"icon\": \"URL\",\r\n      \"description\": \"Descrição features\"\r\n    }\r\n  ],\r\n  \"news\": [\r\n    {\r\n      \"icon\": \"URL\",\r\n      \"description\": \"Descrição novidade\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/users"
+			},
+			"response": []
+		}
+	]
+}
